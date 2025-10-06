@@ -1,0 +1,8 @@
+    jobs:
+      my_job:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Use my internal action
+            uses: my-org/my-internal-action@main # Or @v1, @<commit-sha>
+            with:
+              my_input: 'some-value'
