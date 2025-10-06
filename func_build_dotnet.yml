@@ -1,0 +1,9 @@
+    name: 'My Internal Action'
+    description: 'Performs a custom internal task.'
+    inputs:
+      my_input:
+        description: 'An input for the action.'
+        required: true
+    runs:
+      using: 'node16' # Or 'docker', 'composite' etc.
+      main: 'dist/index.js' # Path to the action's main script
